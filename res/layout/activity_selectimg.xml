@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4C5E76" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="写动态"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/activity_selectimg_send"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@drawable/text_while"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:gravity="left|top"
+        android:hint="写点什么吧......"       
+        android:background="@null" >
+    </EditText>
+
+    <GridView 
+        android:id="@+id/noScrollgridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:horizontalSpacing="3dp"        
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" >
+    </GridView>
+    
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="60px"
+        android:layout_marginTop="10dp"
+        android:background="#DEDEDE"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+           android:layout_centerVertical="true"
+            android:text="可见范围"
+            android:textColor="#000000" />
+        
+        
+        
+               <Button
+            android:id="@+id/index_friend_publish_button"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#4C5E76"
+            android:text="朋友"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/index_all_publish_button"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_toLeftOf="@id/index_friend_publish_button"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_index_background"
+            android:text="全部"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DEDEDE"
+        android:visibility="visible" />
+
+</LinearLayout>

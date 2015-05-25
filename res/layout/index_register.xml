@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:stretchColumns="1" >
+
+    <TableRow>
+        <TextView 
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:layout_gravity="center_vertical|left"
+            />
+        <EditText
+            android:id="@+id/index_weixunCode_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+    
+        <TableRow>
+        <EditText
+            android:id="@+id/index_nickname_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="昵称"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+    
+           <TableRow>
+        <EditText
+            android:id="@+id/index_regpwd_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:hint="请输入登录密码"
+            android:text="密码"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+    
+                      <TableRow>
+        <EditText
+            android:id="@+id/index_reregpwd_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+    
+                                            <TableRow>
+        <EditText
+            android:id="@+id/index_reguser_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:hint="手机号"
+            android:inputType="phone"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+    
+    
+    <TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="验证码"
+            android:textSize="30px" />
+       <LinearLayout android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"> 
+        <ImageButton android:id="@+id/index_yzm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"    
+            android:src="@drawable/index_yzm"            
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#00ffffff"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/index_yzm_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:hint="  输入"
+            android:inputType="number"
+            android:selectAllOnFocus="true" />
+        </LinearLayout>
+    </TableRow>
+    
+
+    
+              
+    
+              
+            <Button android:id="@+id/index_forgetSubmit_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="立即注册"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+                android:background="@color/redwineOrange"
+                />
+
+
+</TableLayout>
